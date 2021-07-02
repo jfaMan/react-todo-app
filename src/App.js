@@ -4,7 +4,7 @@ import ToDoItem from './components/ToDoItem';
 
 const App = () => {
   return (
-    <div>
+    <div className="todo-list">
       <Header />
       <ToDoItem />
       <ToDoItem />
