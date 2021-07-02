@@ -1,9 +1,15 @@
 import React from 'react';
 import Header from './components/Header';
+import ToDoItem from './components/ToDoItem';
 
 const App = () => {
   return (
-    <Header />
+    <div>
+      <Header />
+      <ToDoItem />
+      <ToDoItem />
+      <ToDoItem />
+    </div>
   )
 };
 
