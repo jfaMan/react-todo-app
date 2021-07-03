@@ -51,3 +51,32 @@ input[type=checkbox] {
 input[type=checkbox]:focus {
   outline: 0;
 }
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 64px;
+}
+
+.contact-card {
+  flex-basis: 250px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 2px 4px grey;
+  padding: 16px;
+}
+
+.contact-card > img {
+  width: 100%;
+  height: auto;
+}
+
+.contact-card > h3 {
+  text-align: center;
+}
+
+.contact-card > p {
+  font-size: 12px;
+}
