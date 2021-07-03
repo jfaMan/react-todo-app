@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 
 const Joke = (props) => {
   return (
@@ -7,6 +7,6 @@ const Joke = (props) => {
       <p>Answer: {props.joke.answer}</p>
     </div>
   )
-}
+};
 
 export default Joke;
