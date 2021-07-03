@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import ToDoItem from './components/ToDoItem';
-import ContactCard from './components/ContactCard';
+import AnimalCard from './components/AnimalCard';
 
 const App = () => {
   return (
@@ -13,11 +13,17 @@ const App = () => {
         <ToDoItem />
       </div>
       <div className='contacts'>
-        <ContactCard 
-          contact = {{name: "Bob", type: "dog", age: "3"}}
+        <AnimalCard 
+          contact = {{name: "Wolfy", type: "dog", age: "3"}}
         />
-        <ContactCard
-          contact = {{name: "Tam", type: "cat", age: "8"}}
+        <AnimalCard
+          contact = {{name: "Tom", type: "cat", age: "8"}}
+        />
+        <AnimalCard
+          contact = {{name: "Jerry", type: "mouse", age: "4"}}
+        />
+        <AnimalCard
+          contact = {{name: "Daffy", type: "duck", age: "16"}}
         />
       </div>
     </div>
