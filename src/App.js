@@ -2,15 +2,17 @@ import React from 'react';
 import Header from './components/Header';
 import ToDoItem from './components/ToDoItem';
 import AnimalCard from './components/AnimalCard';
+import todosData from './components/todosData';
 
 const App = () => {
+
+  const todoItems = todosData.map(item => <ToDoItem key={item.id} item={item} />)
+
   return (
     <div>
       <div className="todo-list">
         <Header />
-        <ToDoItem />
-        <ToDoItem />
-        <ToDoItem />
+        {todoItems}
       </div>
       <div className='contacts'>
         <AnimalCard 

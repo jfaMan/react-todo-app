@@ -14,10 +14,7 @@ const AnimalCard = (props) => {
       <p>Age: {props.contact.age}</p>
       <Joke
         joke = {{question: "Guess who?", answer: `Ya boy, ${props.contact.name}!`}}
-      />
-      <div>
-        {jokesComponents}
-      </div>
+      />  
     </div>
   )
 };
