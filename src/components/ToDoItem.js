@@ -1,6 +1,7 @@
 import React from 'react';
 
 const ToDoItem = (props) => {
+  let textDecoration = props.item.completed ? "line-through" : "none"
   return (
     <div className="todo-item">
       <input
@@ -8,7 +9,7 @@ const ToDoItem = (props) => {
         checked={props.item.completed}
         onChange={() => props.handleChange(props.item.id)}
       />
-      <p>{props.item.text}</p>
+      <p style={{ textDecoration: textDecoration }}>{props.item.text}</p>
     </div>
   )
 };
